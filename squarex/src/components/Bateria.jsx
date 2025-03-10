@@ -7,7 +7,7 @@ export default function Bateria() {
   return (
     <>
     <div className='w-full h-200 bg-[#0B0B0B] flex justify-around'>
-        <div className='flex flex-col justify-center align-middle w-2/5'>
+        <div className='flex flex-col justify-center align-middle w-2/5 ml-30'>
             <AppearingText type="big" bigtext="Bateria para o dia todo" 
             smalltext="Através de sua alta eficiência energética, o Nexus 
             consegue armazenar bateria suficiente para seus jogos, filmes, músicas e podcasts"></AppearingText>

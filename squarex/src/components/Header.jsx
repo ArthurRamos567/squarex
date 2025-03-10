@@ -1,6 +1,5 @@
 import React from 'react'
 import logo from '../assets/logo.png'
-
 function Header() {
   return (
     <header className='h-30 shadow-xl shadow-gray-200/50 relative flex justify-center items-center'>

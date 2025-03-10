@@ -21,5 +21,6 @@ export default function Rd2() {
         </div>
     </div>
     </div>
+
   )
 }
