@@ -1,5 +1,5 @@
 import React from 'react'
-import Rd2 from './RD2'
+import Rd2 from './Rd2'
 import glow from '../assets/glow.png'
 import AppearingText from './AppearingText'
 
