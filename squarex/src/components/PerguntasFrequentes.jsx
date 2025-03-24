@@ -4,7 +4,7 @@ import BoxPergunta from './BoxPergunta'
 export default function PerguntasFrequentes() {
   return (
     <>
-    <div className='bg-[#0B0B0B] text-white flex justify-start flex-col items-center'>
+    <div className='bg-[#0B0B0B] text-white flex justify-start flex-col items-center pb-20'>
     <span className='text-5xl font-poppins text-white my-15 font-bold text-start w-3/4 '>Perguntas Frequentes</span>
     <BoxPergunta pergunta='O Nexus possui variantes em outras cores?  ' resposta='Sim, o Nexus possui suas cores nas variantes preta, azul, vermelha e branca'></BoxPergunta>
     <BoxPergunta pergunta='A câmera consegue gravar vídeo em 4K 60FPS?  ' resposta='Sim, Sua câmera dupla de 200MP, além de fazer gravações em 4K 60fps, consegue tirar fotos em alta resolução, reconhecer pessoas e objetos, melhorar a tonalidade de cor, realçar detalhes e reduzir ruído'></BoxPergunta>

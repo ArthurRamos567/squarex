@@ -7,6 +7,7 @@ import Camera from './components/Camera'
 import Bateria from './components/Bateria'
 import Depoimentos from './components/Depoimentos'
 import PerguntasFrequentes from './components/PerguntasFrequentes'
+import Footer from './components/Footer';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       <Bateria></Bateria>
       <Depoimentos></Depoimentos>
       <PerguntasFrequentes></PerguntasFrequentes>
+      <Footer></Footer>
     </>
   )
 }
