@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import rd2 from '../assets/rd2.png'
 import rd2lit from '../assets/rd2lit.png'
 import useIsInView from './useIsInView';
-import Rd2 from './RD2';
+
 
 const Rd2Image = () => {
     const imageContainerRef = useRef(null);
