@@ -1,19 +1,11 @@
 import React from 'react'
-import { useState } from 'react';
+
 import SquareText from './SquareText'
 import msphone from '../assets/msphone.png'
 
 
 export default function Depoimentos() {
-  const [isHover, setIsHover] = useState(false);
-
-  const handleMouseEnter = () => {
-    setIsHover(true);
-  };
-  const handleMouseLeave = () => {
-    setIsHover(false);
-  };
-
+ 
   return (
     <>
       <div className='w-full bg-[#0B0B0B] pb-30'>
@@ -28,11 +20,9 @@ export default function Depoimentos() {
             <span className='text-5xl font-poppins text-white my-5 font-bold'>SquareX NEXUS</span>
             <span className='text-xl font-poppins text-white text-start mb-5'> O celular completo</span>
             <button
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-              className={`border-1 border-white rounded-4xl py-2 px-5 ${isHover ? 'bg-white' : 'bg-[#0B0B0B]'} transition duration-200 `}>
+              className={`group hover:bg-white bg-[#0B0B0B] border-1 border-white rounded-4xl py-2 px-5 transition duration-200 `}>
               <a href="https://www.apple.com/br/iphone-16/"
-                className={`text-l font-poppins ${isHover ? 'text-black' : 'text-white'} transition duration-200 text-center font-extralight`}
+                className={`text-l font-poppins group-hover:text-black text-white transition duration-200 text-center font-extralight`}
               >
                 Compre Agora!</a></button>
           </section>

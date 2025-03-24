@@ -1,32 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react'
 import rd2 from '../assets/rd2.png'
 import rd2lit from '../assets/rd2lit.png'
+import useIsInView from './useIsInView';
+import Rd2 from './RD2';
 
 const Rd2Image = () => {
-    const [inView, setInView] = useState(false);
     const imageContainerRef = useRef(null);
-
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                setInView(entry.isIntersecting);
-            },
-            {
-                root: null,
-                threshold: 0.5,
-            }
-        );
-
-        if (imageContainerRef.current) {
-            observer.observe(imageContainerRef.current);
-        }
-
-        return () => {
-            if (imageContainerRef.current) {
-                observer.unobserve(imageContainerRef.current);
-            }
-        };
-    }, []);
+    const inView = useIsInView(imageContainerRef)
+    
 
 
     return (

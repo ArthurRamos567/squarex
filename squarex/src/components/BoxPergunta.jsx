@@ -1,13 +1,13 @@
-import React from 'react'
+import React, { useCallback } from 'react'
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleUp, faAngleDown  } from '@fortawesome/free-solid-svg-icons'
 
 export default function BoxPergunta({pergunta, resposta}) {
     const [isOpen, setIsOpen] = useState(false)
-    const handleClick = () => {
-        setIsOpen(!isOpen)
-    }
+    const handleClick = useCallback (() => {
+        setIsOpen(isOpen => !isOpen)
+    }, [setIsOpen])
         return (
                 <>
                 <div className='w-3/4 h-25 color-[0B0B0B] border-y-1 border-white flex justify-between items-center'>
